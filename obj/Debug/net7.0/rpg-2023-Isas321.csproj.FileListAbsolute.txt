@@ -1,0 +1,15 @@
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.csproj.AssemblyReference.cache
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.AssemblyInfoInputs.cache
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.AssemblyInfo.cs
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.csproj.CoreCompileInputs.cache
+C:\Repo\rpg-2023-Isas321\bin\Debug\net7.0\rpg-2023-Isas321.exe
+C:\Repo\rpg-2023-Isas321\bin\Debug\net7.0\rpg-2023-Isas321.deps.json
+C:\Repo\rpg-2023-Isas321\bin\Debug\net7.0\rpg-2023-Isas321.runtimeconfig.json
+C:\Repo\rpg-2023-Isas321\bin\Debug\net7.0\rpg-2023-Isas321.dll
+C:\Repo\rpg-2023-Isas321\bin\Debug\net7.0\rpg-2023-Isas321.pdb
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.dll
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\refint\rpg-2023-Isas321.dll
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.pdb
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\rpg-2023-Isas321.genruntimeconfig.cache
+C:\Repo\rpg-2023-Isas321\obj\Debug\net7.0\ref\rpg-2023-Isas321.dll

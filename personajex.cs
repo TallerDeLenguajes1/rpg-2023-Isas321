@@ -1,12 +1,12 @@
 
 namespace espacioPersonaje;
 
-public class peronaje{
+public class personaje{
 
 //Datos
-    private string tipo;
-    private string nombre;
-    private string apodo;
+    private string? tipo;
+    private string? nombre;
+    private string? apodo;
     private DateTime fechaNacimiento;
     private int edad;
 
@@ -19,30 +19,28 @@ public class peronaje{
     private int salud;
 
 
+//  Constructor
+    // public peronaje(string? tipo, string? nombre, string? apodo, DateTime fechaNacimiento, int edad, int velocidad, int destreza, int fuerza, int nivel, int armadura, int salud)
+    // {
+    //     Tipo = tipo;
+    //     Nombre = nombre;
+    //     Apodo = apodo;
+    //     FechaNacimiento = fechaNacimiento;
+    //     Edad = edad;
+    //     Velocidad = velocidad;
+    //     Destreza = destreza;
+    //     Fuerza = fuerza;
+    //     Nivel = nivel;
+    //     Armadura = armadura;
+    //     Salud = salud;
+    // }
 
 
 
-    public peronaje(string tipo, string nombre, string apodo, DateTime fechaNacimiento, int edad, int velocidad, int destreza, int fuerza, int nivel, int armadura, int salud)
-    {
-        Tipo = tipo;
-        Nombre = nombre;
-        Apodo = apodo;
-        FechaNacimiento = fechaNacimiento;
-        Edad = edad;
-        Velocidad = velocidad;
-        Destreza = destreza;
-        Fuerza = fuerza;
-        Nivel = nivel;
-        Armadura = armadura;
-        Salud = salud;
-    }
-
-
-
-
-    public string Tipo { get => tipo; set => tipo = value; }
-    public string Nombre { get => nombre; set => nombre = value; }
-    public string Apodo { get => apodo; set => apodo = value; }
+//   Get set 
+    public string? Tipo { get => tipo; set => tipo = value; }
+    public string? Nombre { get => nombre; set => nombre = value; }
+    public string? Apodo { get => apodo; set => apodo = value; }
     public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
     public int Edad { get => edad; set => edad = value; }
     public int Velocidad { get => velocidad; set => velocidad = value; }
@@ -52,3 +50,52 @@ public class peronaje{
     public int Armadura { get => armadura; set => armadura = value; }
     public int Salud { get => salud; set => salud = value; }
 }
+
+
+public class FabricaDePersonajes{
+    public personaje crearPersonaje(){
+
+        var personajeAleatorio = new personaje();
+
+        personajeAleatorio.Nombre= nombreRandom();
+        personajeAleatorio.Apodo= apodoRandom();
+        personajeAleatorio.Edad= 20;
+        personajeAleatorio.FechaNacimiento= new DateTime(obtieneRandom(2000,2020),obtieneRandom(1,12),obtieneRandom(1,31));
+        personajeAleatorio.Tipo= tipoRandom();
+        personajeAleatorio.Velocidad= obtieneRandom(1,10);
+        personajeAleatorio.Destreza= obtieneRandom(1,5);
+        personajeAleatorio.Fuerza= obtieneRandom(1,10);
+        personajeAleatorio.Nivel= obtieneRandom(1,10);
+        personajeAleatorio.Armadura= obtieneRandom(1,10);
+        personajeAleatorio.Salud= 100;
+
+        return personajeAleatorio;
+    }
+
+
+    public string nombreRandom(){
+        string[] nombres= {"Paco", "Lucho", "JuanPablo"};
+        return nombres[obtieneRandom(1,3)];
+    }
+
+    public string apodoRandom(){
+        string[] apodos= {"Flaco", "Facha", "Manco"};
+        return apodos[obtieneRandom(1,3)];
+    }
+
+    public string tipoRandom(){
+        string[] tipo= {"Bueno", "Malo"};
+        return tipo[obtieneRandom(1,2)];
+    }
+
+    public int obtieneRandom(int minimo, int maximo){
+        Random random = new Random();
+        return random.Next(minimo,maximo);;
+    }
+}
+
+// public class peronajeSon(){
+//     //leerPersonaje
+//     //guargarPersonaje
+
+// }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "rpg-2023-Isas321/1.0.0": {
+        "runtime": {
+          "rpg-2023-Isas321.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "rpg-2023-Isas321/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
