@@ -93,9 +93,3 @@ public class FabricaDePersonajes{
         return random.Next(minimo,maximo);;
     }
 }
-
-// public class peronajeSon(){
-//     //leerPersonaje
-//     //guargarPersonaje
-
-// }

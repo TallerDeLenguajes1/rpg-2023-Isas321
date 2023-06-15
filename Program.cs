@@ -4,7 +4,7 @@ personaje nuevo;
 FabricaDePersonajes fp= new FabricaDePersonajes();
 nuevo = fp.crearPersonaje();
 
-Console.WriteLine("El nombre del personaje es"+nuevo.Nombre);
+Console.WriteLine("La fecha de nacimiento del personaje es: "+nuevo.FechaNacimiento.ToString("dd-MM-yyyy"));
 
 /*
 public bool Existe(string nombreArchivo){
