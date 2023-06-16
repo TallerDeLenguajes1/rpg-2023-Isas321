@@ -6,12 +6,11 @@ nuevo = fp.crearPersonaje();
 
 Console.WriteLine("La fecha de nacimiento del personaje es: "+nuevo.FechaNacimiento.ToString("dd-MM-yyyy"));
 
-/*
-public bool Existe(string nombreArchivo){
-    //verifico que exista el archivo
-    return
-}
+PersonajesJson pJon = new PersonajesJson();
 
-class PersonajeJson{
-    public void GuardarPersonajes(List<personjaje>)
-}*/
+string nombre "personajes.json";
+List<personaje> ListPer;
+
+pJon.GuardarPersonajes(ListPer,nombre);
+
+

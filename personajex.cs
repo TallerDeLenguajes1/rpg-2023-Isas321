@@ -93,3 +93,18 @@ public class FabricaDePersonajes{
         return random.Next(minimo,maximo);;
     }
 }
+
+class PersonajeJson{
+        public void GuardarPersonajes(List<personaje>nuevo, string archivo){
+            string Json = JsonSerializador;
+        }
+
+        public List<personaje> LeerPersonajes(string archivo){
+            List<personaje>listPer;
+            return listPer;
+        }
+
+        public bool ExistePersonaje(personaje nuevo){
+        return ;
+        }
+}
