@@ -1,4 +1,4 @@
-
+using System.Text.Json; 
 namespace espacioPersonaje;
 
 public class personaje{
@@ -18,7 +18,6 @@ public class personaje{
     private int armadura;
     private int salud;
 
-
 //  Constructor
     // public peronaje(string? tipo, string? nombre, string? apodo, DateTime fechaNacimiento, int edad, int velocidad, int destreza, int fuerza, int nivel, int armadura, int salud)
     // {
@@ -34,8 +33,6 @@ public class personaje{
     //     Armadura = armadura;
     //     Salud = salud;
     // }
-
-
 
 //   Get set 
     public string? Tipo { get => tipo; set => tipo = value; }
@@ -59,7 +56,7 @@ public class FabricaDePersonajes{
 
         personajeAleatorio.Nombre= nombreRandom();
         personajeAleatorio.Apodo= apodoRandom();
-        personajeAleatorio.Edad= 20;
+        personajeAleatorio.Edad= obtieneRandom();
         personajeAleatorio.FechaNacimiento= new DateTime(obtieneRandom(2000,2020),obtieneRandom(1,12),obtieneRandom(1,31));
         personajeAleatorio.Tipo= tipoRandom();
         personajeAleatorio.Velocidad= obtieneRandom(1,10);
@@ -88,6 +85,8 @@ public class FabricaDePersonajes{
         return tipo[obtieneRandom(1,2)];
     }
 
+    public int 
+
     public int obtieneRandom(int minimo, int maximo){
         Random random = new Random();
         return random.Next(minimo,maximo);;
@@ -96,7 +95,9 @@ public class FabricaDePersonajes{
 
 class PersonajeJson{
         public void GuardarPersonajes(List<personaje>nuevo, string archivo){
-            string Json = JsonSerializador;
+            string Json = JsonSerializador.Serialize(nuevo);
+            using(StreamWriter sw = new StreamWriter(Json, false));
+
         }
 
         public List<personaje> LeerPersonajes(string archivo){

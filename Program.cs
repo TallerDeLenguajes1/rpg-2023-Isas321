@@ -9,6 +9,7 @@ Console.WriteLine("La fecha de nacimiento del personaje es: "+nuevo.FechaNacimie
 PersonajesJson pJon = new PersonajesJson();
 
 string nombre "personajes.json";
+
 List<personaje> ListPer;
 
 pJon.GuardarPersonajes(ListPer,nombre);
